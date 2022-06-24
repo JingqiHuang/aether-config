@@ -16,7 +16,7 @@ SMF with DB changes: `git clone https://github.com/JingqiHuang/smf.git`
 	make docker-build
 
 ### Modify configuration files to use our own image
-In ~/aether-in-a-box/sd-core-5g-values.yaml, change the configuration for `5g-control-plane` into the following
+In `~/aether-in-a-box/sd-core-5g-values.yaml`, change the configuration for `5g-control-plane` into the following
 
 ```
 	5g-control-plane:
