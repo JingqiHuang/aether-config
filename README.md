@@ -44,7 +44,7 @@ In ~/aether-in-a-box/sd-core-5g-values.yaml, change the configuration for `5g-co
 
 
 ### Modify configuration files to choose different control event tests
-In the file ~/aether-in-a-box/sd-core-5g-values.yaml, go to the field `5g-ran-sim.config.gnbsim.yamlCfgFiles.gnb.conf.configuration.profiles.
+In the file `~/aether-in-a-box/sd-core-5g-values.yaml`, go to the field `5g-ran-sim.config.gnbsim.yamlCfgFiles.gnb.conf.configuration.profiles`.
 
 In each profile, profileType sets the control event, ueCount sets the test UE number, and enable sets whether this profile will be run or not. If you want to run certain control event, check out its profile and modify the field ueCount and enable
 
