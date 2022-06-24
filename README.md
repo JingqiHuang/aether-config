@@ -8,7 +8,8 @@
 	
 
 ### Download SMF source code
-	SMF with DB changes: `git clone https://github.com/JingqiHuang/smf.git`
+
+SMF with DB changes: `git clone https://github.com/JingqiHuang/smf.git`
 
 ### Build image
 	cd <PATH_TO_SMF_FOLDER>/smf
