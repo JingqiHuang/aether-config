@@ -16,7 +16,7 @@ SMF with DB changes: `git clone https://github.com/JingqiHuang/smf.git`
 	make docker-build
 
 ### Modify configuration files to use our own image
-	In ~/aether-in-a-box/sd-core-5g-values.yaml, change the configuration for `5g-control-plane` into the following
+In ~/aether-in-a-box/sd-core-5g-values.yaml, change the configuration for `5g-control-plane` into the following
 
 ```
 	5g-control-plane:
@@ -40,14 +40,14 @@ SMF with DB changes: `git clone https://github.com/JingqiHuang/smf.git`
 	  pullPolicy: IfNotPresent
 ```
 
-	smf: 5gc-smf:0.0.1-dev-dbchanges is to override the image tag and use the image build by our own
+`smf: 5gc-smf:0.0.1-dev-dbchanges` is to override the image tag and use the image build by our own
 
 
 ### Modify configuration files to choose different control event tests
-	In the file ~/aether-in-a-box/sd-core-5g-values.yaml, go to the field `5g-ran-sim.config.gnbsim.yamlCfgFiles.gnb.conf.configuration.profiles.
+In the file ~/aether-in-a-box/sd-core-5g-values.yaml, go to the field `5g-ran-sim.config.gnbsim.yamlCfgFiles.gnb.conf.configuration.profiles.
 
-	In each profile, profileType sets the control event, ueCount sets the test UE number, and enable sets whether this profile will be run or not. If you want to run certain control event, check out its profile and modify the field ueCount and enable
+In each profile, profileType sets the control event, ueCount sets the test UE number, and enable sets whether this profile will be run or not. If you want to run certain control event, check out its profile and modify the field ueCount and enable
 
 
 ### Set up aether-in-a-box and run the test
-	run ```make 5g-test```
+run ```make 5g-test```
